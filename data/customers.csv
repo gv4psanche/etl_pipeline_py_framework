@@ -1,0 +1,16 @@
+customer_id,customer_name,email,phone,city,state,country,segment,join_date,credit_limit
+CUST-101,Acme Corp,contact@acme.com,555-1001,New York,NY,USA,Enterprise,2022-03-15,50000
+CUST-102,Beta Solutions,info@beta.io,555-1002,Austin,TX,USA,SMB,2022-07-20,15000
+CUST-103,Gamma Tech,hello@gamma.tech,555-1003,Chicago,IL,USA,Enterprise,2021-11-01,75000
+CUST-104,Delta Industries,sales@delta.com,555-1004,Phoenix,AZ,USA,SMB,2023-01-10,10000
+CUST-105,Epsilon LLC,support@epsilon.co,555-1005,Miami,FL,USA,Mid-Market,2022-05-18,25000
+CUST-106,Zeta Partners,zeta@partners.net,555-1006,Seattle,WA,USA,Enterprise,2021-08-22,60000
+CUST-107,Eta Group,contact@eta.org,555-1007,Denver,CO,USA,SMB,2023-03-05,8000
+CUST-108,Theta Corp,info@theta.com,555-1008,Boston,MA,USA,Mid-Market,2022-09-14,30000
+CUST-109,Iota Systems,hello@iota.io,555-1009,Atlanta,GA,USA,Enterprise,2021-12-30,90000
+CUST-110,Kappa Inc,kappa@inc.com,555-1010,Portland,OR,USA,SMB,2023-06-01,12000
+CUST-111,Lambda Services,info@lambda.svc,555-1011,Dallas,TX,USA,Mid-Market,2022-04-25,20000
+CUST-112,Mu Technologies,mu@tech.com,555-1012,San Jose,CA,USA,Enterprise,2021-06-17,80000
+CUST-113,Nu Ventures,hello@nu.vc,555-1013,Charlotte,NC,USA,SMB,2023-02-28,9000
+CUST-114,Xi Consulting,xi@consult.biz,555-1014,Nashville,TN,USA,Mid-Market,2022-11-11,22000
+CUST-115,Omicron Ltd,sales@omicron.co,555-1015,Las Vegas,NV,USA,SMB,2023-08-09,11000

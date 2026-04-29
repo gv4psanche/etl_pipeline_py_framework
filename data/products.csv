@@ -1,0 +1,6 @@
+product_id,product_name,category,subcategory,cost_price,list_price,stock_quantity,supplier,launch_date,is_active
+PROD-A1,ProSuite Enterprise,Software,ERP,120.00,299.99,999,TechVendor A,2021-01-15,TRUE
+PROD-B2,DataSync Lite,Software,Analytics,55.00,149.50,999,TechVendor B,2021-06-01,TRUE
+PROD-C3,SecureShield Basic,Security,Antivirus,30.00,89.00,999,SecVendor C,2020-11-20,TRUE
+PROD-D4,CloudBackup Pro,Cloud,Storage,180.00,499.00,999,CloudVendor D,2022-03-10,TRUE
+PROD-E5,NetMonitor Plus,Network,Monitoring,90.00,249.00,0,NetVendor E,2019-05-05,FALSE
