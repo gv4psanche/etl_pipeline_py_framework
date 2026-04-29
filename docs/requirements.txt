@@ -1,0 +1,16 @@
+# requirements.txt  –  ETL Pipeline Dependencies
+# ─────────────────────────────────────────────────────────────
+
+# Core data processing
+pandas>=2.0.0
+openpyxl>=3.1.0          # Excel read/write (Power BI / Tableau output)
+PyYAML>=6.0              # Config parsing
+
+# Azure Blob Storage (comment out if using Databricks only)
+azure-storage-blob>=12.19.0
+
+# Databricks (comment out if using Azure Blob only)
+databricks-sdk>=0.20.0
+
+# Scheduling (optional – for automated runs)
+schedule>=1.2.0
