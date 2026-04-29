@@ -1,2 +1,2 @@
-# etl_pipeline_py_framework
+# ETL Pipeline Python Framework
 Sample ETL Framework (Python)
