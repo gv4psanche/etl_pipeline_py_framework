@@ -1,0 +1,62 @@
+# config/etl_config.yaml
+# ETL Pipeline Configuration
+
+# ─────────────────────────────────────────────
+# SOURCE: Azure Blob Storage
+# ─────────────────────────────────────────────
+azure_blob:
+  connection_string: "DefaultEndpointsProtocol=https;AccountName=<YOUR_ACCOUNT>;AccountKey=<YOUR_KEY>;EndpointSuffix=core.windows.net"
+  container_name: "etl-raw-data"
+  blobs:
+    - sales.csv
+    - customers.csv
+    - products.csv
+  local_staging_dir: "data/raw"
+
+# ─────────────────────────────────────────────
+# SOURCE (ALT): Databricks
+# ─────────────────────────────────────────────
+databricks:
+  host: "https://<YOUR_WORKSPACE>.azuredatabricks.net"
+  token: "<YOUR_ACCESS_TOKEN>"
+  cluster_id: "<YOUR_CLUSTER_ID>"
+  tables:
+    - "catalog.schema.sales"
+    - "catalog.schema.customers"
+    - "catalog.schema.products"
+  local_staging_dir: "data/raw"
+
+# ─────────────────────────────────────────────
+# TRANSFORMATION RULES
+# ─────────────────────────────────────────────
+transformations:
+  date_columns: ["order_date", "join_date", "launch_date"]
+  drop_inactive_products: true
+  discount_threshold: 0.25       # flag orders with discount above this
+  derive_revenue: true            # quantity * unit_price * (1 - discount)
+  derive_profit: true             # revenue - (quantity * cost_price)
+  join_keys:
+    sales_customers: "customer_id"
+    sales_products: "product_id"
+
+# ─────────────────────────────────────────────
+# OUTPUT: Power BI / Tableau Ready
+# ─────────────────────────────────────────────
+output:
+  directory: "data/processed"
+  files:
+    fact_orders: "fact_orders.csv"
+    dim_customers: "dim_customers.csv"
+    dim_products: "dim_products.csv"
+    summary_by_region: "summary_by_region.csv"
+    summary_by_product: "summary_by_product.csv"
+    summary_by_rep: "summary_by_rep.csv"
+  excel_combined: "etl_output_powerbi_tableau.xlsx"
+
+# ─────────────────────────────────────────────
+# LOGGING
+# ─────────────────────────────────────────────
+logging:
+  log_dir: "logs"
+  log_file: "etl_pipeline.log"
+  level: "INFO"
