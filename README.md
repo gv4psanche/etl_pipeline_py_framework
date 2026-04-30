@@ -19,6 +19,7 @@ etl_solution/<br>
 <table><tr><td>
 <img src="images/ETL_py_proj_structure.png">
 </td></tr></table>
+
 ---
 
 ## 🔁 <b>The Pipeline (etl_pipeline.py)</b>
