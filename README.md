@@ -39,17 +39,23 @@ etl_solution/<br>
 
 ---
 ## ▶️ How to Run
-- bash# Install dependencies
-- pip install -r requirements.txt
+<!--
+bash
+# Install dependencies
+pip install -r requirements.txt
 
-###  Run with local sample data
-- python etl_pipeline.py --source local
+# Run with local sample data
+python etl_pipeline.py --source local
 
-###  Run with Azure Blob (fill in credentials in config/etl_config.yaml first)
-- python etl_pipeline.py --source azure
+#  Run with Azure Blob (fill in credentials in config/etl_config.yaml first)
+python etl_pipeline.py --source azure
 
-###  Run with Databricks
-- python etl_pipeline.py --source databricks
+#  Run with Databricks
+python etl_pipeline.py --source databricks
 
-###  Schedule automatically (runs daily at 6am)
-- python scheduler.py --source azure --interval daily --time 06:00
+#  Schedule automatically (runs daily at 6am)
+python scheduler.py --source azure --interval daily --time 06:00
+-->
+<table><tr><td>
+<img src="images/ETL_py_how_to_run.png">
+</td></tr></table>
