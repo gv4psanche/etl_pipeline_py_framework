@@ -3,19 +3,22 @@
 ## ETL Solution — What's Included
 
 ### Project Structure 
-
+<!--
 etl_solution/<br>
 ├── etl_pipeline.py          # Main ETL script (Extract → Transform → Load)<br>
 ├── scheduler.py             # Automated scheduling (daily/hourly/weekly)<br>
 ├── requirements.txt         # Python dependencies<br>
 ├── config/<br>
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── etl_config.yaml      # All source/output settings<br>
+│   └── etl_config.yaml      # All source/output settings<br>
 ├── data/<br>
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── raw/                 # Input: sales.csv, customers.csv, products.csv<br>
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── processed/           # Output: 6 CSVs + combined Excel (6 sheets)<br>
+│   ├── raw/                 # Input: sales.csv, customers.csv, products.csv<br>
+│   └── processed/           # Output: 6 CSVs + combined Excel (6 sheets)<br>
 └── logs/<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── etl_pipeline.log     # Full run logs<br>
-
+-->
+<table><tr><td>
+<img src="images/ETL_py_proj_structure.png">
+</td></tr></table>
 ---
 
 ## 🔁 <b>The Pipeline (etl_pipeline.py)</b>
