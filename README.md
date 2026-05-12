@@ -63,3 +63,5 @@ python scheduler.py --source azure --interval daily --time 06:00
 <table><tr><td>
 <img src="images/ETL_py_how_to_run.png">
 </td></tr></table>
+
+<!-- https://claude.ai/chat/32c2dd16-4efd-4f1d-8760-27d100f0e743   -->
